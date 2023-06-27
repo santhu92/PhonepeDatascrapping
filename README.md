@@ -45,3 +45,24 @@ To insert the datadrame into SQL first I've created a script to create new datab
 Creating the connection between python and mysql
 
 and viualise the data in the stream lit api for the user friendly visualisation.
+
+## How to run this application:
+Down load the scripts from this repo and save all the script in the same location.
+Open command prompt and cd to the directory where scripts are down loaded.
+run the below command:
+  "python start_phpe.py"
+# starrt_phpe.py
+This script will start the application by runs the other script in the backend.
+
+# phpeEDA.py
+This script will down load the PhonePe data from git repo "https://github.com/PhonePe/pulse.git" and extract the json format data in to dataframe format. 
+6 data frame will be created as part of this script. Aggregated transaction, aggregated user, map transaction, map user, top transaction, top user. 
+one data is converted to data frame same script will upload the data in to sql database. 
+Hope you have the database server installed in your machine. please update the code with your data base password and database name under the line 
+#########BElow part is to upload the data into sql data base.###########  in the bottom of code.
+*NOTE* -  Please update the database connection URL , database name, its username and password in this script to work according to your envronment.
+
+# streamlitdashboard.py
+This Script will create a stream lit dash board . 
+Script Reads the data from the data base and create the visulation with dropdown options. 
+*NOTE* -  Please update the database connection URL , database name, its username and password in this script to work according to your envronment.
