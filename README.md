@@ -66,3 +66,6 @@ Hope you have the database server installed in your machine. please update the c
 This Script will create a stream lit dash board . 
 Script Reads the data from the data base and create the visulation with dropdown options. 
 *NOTE* -  Please update the database connection URL , database name, its username and password in this script to work according to your envronment.
+
+# requirements.txt
+This files hold all the required library for this project.
